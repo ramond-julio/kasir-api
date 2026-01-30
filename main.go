@@ -169,7 +169,7 @@ func main() {
 		}
 	})
 
-	addr := "localhost:" + config.Port
+	addr := "0.0.0.0:" + config.Port
 	fmt.Println("Server running on " + addr)
 	err = http.ListenAndServe(addr, nil)
 	if err != nil {
